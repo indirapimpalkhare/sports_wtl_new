@@ -1,0 +1,85 @@
+<style>
+.buttonlc{
+	border-color: lightcoral; 
+	color: lightcoral; 
+	outline: auto;
+    outline-color: lightcoral;
+}
+.buttonlc:hover {
+	background-color: lightcoral;
+	color: white;
+}
+.custom-toggler.navbar-toggler {
+    border-color: lightcoral;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(240,128,128, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+#content {
+  margin-top: 80px;
+  color: white;
+}
+
+.navbar-inner li {
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+
+.nav-link {
+  border-top: 4px solid white;
+  transition: border-top 0.3s;
+}
+.nav-link:hover {
+  border-top: 4px solid lightcoral;
+}
+
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
+  background-image: none;
+  background-color: lightcoral;
+}
+
+.brand {
+  letter-spacing: 4px;
+  border-top: 4px solid white;
+  transition: border-top 0.3s;
+}
+.brand:hover {
+  border-top: 4px solid lightcoral;
+}
+.brand:hover {
+  border-top: 4px solid lightcoral;
+}
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<head>
+  <!--meta tag used for ease of viewing on any device-->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--bootstrap-->
+  <!--we use style tag for internal css inside head tag-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/sports_event/home/homepage.php">APPNAME</a>
+  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" style =  "color:lightcoral"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto nav pull-right">
+      <li class="nav-item">
+        <a class="nav-link" href="/sports_event/events/new_event_form.php">NEW EVENT</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="/sports_event/events/my_event.php">MY EVENTS</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="/sports_event/login/logout.php">LOG OUT</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn my-2 my-sm-0 buttonlc"  type="submit">SEARCH</button>
+    </form>
+  </div>
+</nav>
